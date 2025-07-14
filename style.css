@@ -1,0 +1,145 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #d9d9d9;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  height: 48px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.nav-links li a.active {
+  border-bottom: 3px solid #1a4b32;
+  color: #1a4b32;
+}
+
+.wa-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* === SECTION === */
+.section {
+  padding: 60px 0;
+}
+
+.section h1,
+.section h2 {
+  text-align: center;
+  color: #1a4b32;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+  color: #444;
+}
+
+.section ul {
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 20px;
+  color: #444;
+  font-size: 16px;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #f3f3f3;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.sosmed a {
+  color: #1a4b32;
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .wa-btn {
+    margin-top: 10px;
+  }
+
+  .section p,
+  .section ul {
+    padding: 0 10px;
+  }
+}
